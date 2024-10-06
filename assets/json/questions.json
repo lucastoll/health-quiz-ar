@@ -2,8 +2,8 @@
   {
     "question": "Qual e a quantidade minima recomendada de agua que uma pessoa deve beber por dia?",
     "options": [
-      { "answer": "1 litro", "correct": false },
       { "answer": "2 litros", "correct": true },
+      { "answer": "1 litro", "correct": false },
       { "answer": "500 ml", "correct": false },
       { "answer": "4 litros", "correct": false }
     ]
@@ -11,10 +11,406 @@
   {
     "question": "Qual e o melhor metodo de prevencao contra o virus da gripe?",
     "options": [
-      { "answer": "Tomar vacina anualmente", "correct": true },
       { "answer": "Lavar as maos apenas antes das refeicoes", "correct": false },
       { "answer": "Tomar vitamina C", "correct": false },
+      { "answer": "Tomar vacina anualmente", "correct": true },
       { "answer": "Usar antibioticos", "correct": false }
+    ]
+  },
+  {
+    "question": "Quantas horas de sono são recomendadas para um adulto por noite?",
+    "options": [
+      { "answer": "5 horas", "correct": false },
+      { "answer": "10 a 12 horas", "correct": false },
+      { "answer": "7 a 9 horas", "correct": true },
+      { "answer": "6 horas", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual destes hábitos é mais eficaz para prevenir a COVID-19?",
+    "options": [
+      { "answer": "Tomar suplementos", "correct": false },
+      { "answer": "Praticar exercícios físicos", "correct": false },
+      { "answer": "Consumir alimentos naturais", "correct": false },
+      { "answer": "Usar máscara e higienizar as mãos", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual é o principal vetor de transmissão da dengue?",
+    "options": [
+      { "answer": "Mosquito Aedes aegypti", "correct": true },
+      { "answer": "Mosca", "correct": false },
+      { "answer": "Ratos", "correct": false },
+      { "answer": "Água contaminada", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a importância de usar protetor solar diariamente?",
+    "options": [
+      { "answer": "Evitar queimaduras solares", "correct": false },
+      { "answer": "Prevenir câncer de pele", "correct": true },
+      { "answer": "Manter a pele hidratada", "correct": false },
+      { "answer": "Reduzir a produção de vitamina D", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é o tempo ideal de escovação dos dentes após as refeições?",
+    "options": [
+      { "answer": "2 minutos", "correct": true },
+      { "answer": "1 minuto", "correct": false },
+      { "answer": "5 minutos", "correct": false },
+      { "answer": "30 segundos", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a vacina que ajuda a prevenir o câncer de colo de útero?",
+    "options": [
+      { "answer": "Vacina contra a gripe", "correct": false },
+      { "answer": "Vacina contra hepatite B", "correct": false },
+      { "answer": "Vacina contra o HPV", "correct": true },
+      { "answer": "Vacina BCG", "correct": false }
+    ]
+  },
+  {
+    "question": "Com que frequência é recomendado fazer exercícios físicos?",
+    "options": [
+      { "answer": "1 vez por semana", "correct": false },
+      { "answer": "Diariamente por 4 horas", "correct": false },
+      { "answer": "Somente nos fins de semana", "correct": false },
+      { "answer": "3 a 5 vezes por semana", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual é o principal sintoma de hipertensão arterial?",
+    "options": [
+      { "answer": "Fadiga extrema", "correct": false },
+      { "answer": "Dores de cabeça frequentes", "correct": true },
+      { "answer": "Febre alta", "correct": false },
+      { "answer": "Tosse persistente", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual destes alimentos é conhecido por reduzir o colesterol ruim (LDL)?",
+    "options": [
+      { "answer": "Manteiga", "correct": false },
+      { "answer": "Batata frita", "correct": false },
+      { "answer": "Abacate", "correct": true },
+      { "answer": "Carne vermelha", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a principal forma de transmissão do HIV?",
+    "options": [
+      { "answer": "Contato com saliva", "correct": false },
+      { "answer": "Picada de mosquito", "correct": false },
+      { "answer": "Através do suor", "correct": false },
+      { "answer": "Relações sexuais sem proteção", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual é a recomendação básica para evitar intoxicação alimentar?",
+    "options": [
+      { "answer": "Cozinhar todos os alimentos por 10 minutos", "correct": false },
+      { "answer": "Lavar as mãos antes de cozinhar", "correct": true },
+      { "answer": "Comer somente alimentos crus", "correct": false },
+      { "answer": "Evitar qualquer tipo de carne", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é o benefício da prática regular de atividades físicas?",
+    "options": [
+      { "answer": "Aumenta o cansaço", "correct": false },
+      { "answer": "Diminui o apetite", "correct": false },
+      { "answer": "Provoca dores nas articulações", "correct": false },
+      { "answer": "Melhora a memória", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual a principal forma de prevenir a infecção por hepatite B?",
+    "options": [
+      { "answer": "Beber água filtrada", "correct": false },
+      { "answer": "Tomar a vacina contra hepatite B", "correct": true },
+      { "answer": "Usar máscara", "correct": false },
+      { "answer": "Lavar as mãos frequentemente", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a frequência mínima recomendada para a escovação dos dentes?",
+    "options": [
+      { "answer": "1 vez ao dia", "correct": false },
+      { "answer": "Após cada refeição", "correct": false },
+      { "answer": "3 vezes por semana", "correct": false },
+      { "answer": "2 vezes ao dia", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual é o principal fator de risco para o desenvolvimento de diabetes tipo 2?",
+    "options": [
+      { "answer": "Exposição ao sol", "correct": false },
+      { "answer": "Consumo de vitamina C", "correct": false },
+      { "answer": "Falta de exercícios físicos", "correct": true },
+      { "answer": "Beber muita água", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual destes hábitos é essencial para prevenir doenças cardíacas?",
+    "options": [
+      { "answer": "Comer mais carne vermelha", "correct": false },
+      { "answer": "Beber refrigerante", "correct": false },
+      { "answer": "Reduzir o consumo de sal", "correct": true },
+      { "answer": "Fumar moderadamente", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a quantidade máxima recomendada de consumo de açúcar por dia, segundo a OMS?",
+    "options": [
+      { "answer": "100 gramas", "correct": false },
+      { "answer": "150 gramas", "correct": false },
+      { "answer": "200 gramas", "correct": false },
+      { "answer": "50 gramas", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual dos seguintes fatores pode aumentar o risco de câncer de pulmão?",
+    "options": [
+      { "answer": "Comer alimentos ricos em fibras", "correct": false },
+      { "answer": "Fumar cigarro", "correct": true },
+      { "answer": "Beber café", "correct": false },
+      { "answer": "Praticar esportes", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a função principal da vitamina D no corpo?",
+    "options": [
+      { "answer": "Aumentar o apetite", "correct": false },
+      { "answer": "Diminuir a pressão arterial", "correct": false },
+      { "answer": "Fortalecer os ossos", "correct": true },
+      { "answer": "Melhorar a digestão", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a principal recomendação para evitar a obesidade infantil?",
+    "options": [
+      { "answer": "Dar suplementos vitamínicos", "correct": false },
+      { "answer": "Evitar o consumo de frutas", "correct": false },
+      { "answer": "Promover alimentação equilibrada e atividades físicas", "correct": true },
+      { "answer": "Aumentar o tempo de uso de telas", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual a função da vacinação em massa?",
+    "options": [
+      { "answer": "Erradicar doenças preveníveis", "correct": true },
+      { "answer": "Aumentar a imunidade individual", "correct": false },
+      { "answer": "Melhorar a saúde geral da população", "correct": false },
+      { "answer": "Prevenir alergias", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a causa mais comum de intoxicação alimentar?",
+    "options": [
+      { "answer": "Excesso de frutas na alimentação", "correct": false },
+      { "answer": "Consumo de alimentos contaminados por bactérias", "correct": true },
+      { "answer": "Beber água em excesso", "correct": false },
+      { "answer": "Consumir alimentos orgânicos", "correct": false }
+    ]
+  },
+  {
+    "question": "O que é recomendado para manter a saúde mental em dia?",
+    "options": [
+      { "answer": "Evitar conversar com amigos", "correct": false },
+      { "answer": "Ficar em casa o dia todo", "correct": false },
+      { "answer": "Comer em excesso", "correct": false },
+      { "answer": "Praticar atividades físicas regularmente", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual o tempo máximo que um alimento pode ficar fora da geladeira para ser seguro para consumo?",
+    "options": [
+      { "answer": "5 horas", "correct": false },
+      { "answer": "24 horas", "correct": false },
+      { "answer": "12 horas", "correct": false },
+      { "answer": "2 horas", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual é o melhor método para prevenir cáries dentárias?",
+    "options": [
+      { "answer": "Beber bastante água", "correct": false },
+      { "answer": "Evitar comer carne", "correct": false },
+      { "answer": "Escovar os dentes após cada refeição", "correct": true },
+      { "answer": "Tomar suplemento de cálcio", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual destes é um dos principais fatores que contribuem para a hipertensão?",
+    "options": [
+      { "answer": "Excesso de exposição ao sol", "correct": false },
+      { "answer": "Consumo excessivo de sal", "correct": true },
+      { "answer": "Dormir mais de 8 horas por noite", "correct": false },
+      { "answer": "Beber pouca água", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a principal função da fibra alimentar na dieta?",
+    "options": [
+      { "answer": "Aumentar os níveis de açúcar no sangue", "correct": false },
+      { "answer": "Fornecer energia", "correct": false },
+      { "answer": "Ajudar na digestão", "correct": true },
+      { "answer": "Fortalecer os ossos", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual das seguintes doenças pode ser prevenida com o uso de repelente contra insetos?",
+    "options": [
+      { "answer": "Tuberculose", "correct": false },
+      { "answer": "Dengue", "correct": true },
+      { "answer": "Gripe", "correct": false },
+      { "answer": "Pneumonia", "correct": false }
+    ]
+  },
+  {
+    "question": "O que é uma alimentação balanceada?",
+    "options": [
+      { "answer": "Ingestão de alimentos variados e em quantidades adequadas", "correct": true },
+      { "answer": "Comer apenas frutas e vegetais", "correct": false },
+      { "answer": "Evitar carboidratos completamente", "correct": false },
+      { "answer": "Fazer jejum prolongado", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual a melhor maneira de evitar a desidratação?",
+    "options": [
+      { "answer": "Tomar apenas sucos naturais", "correct": false },
+      { "answer": "Beber água apenas quando sentir sede", "correct": false },
+      { "answer": "Beber água regularmente ao longo do dia", "correct": true },
+      { "answer": "Tomar café frequentemente", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é o melhor momento para aplicar o protetor solar?",
+    "options": [
+      { "answer": "Após começar a se bronzear", "correct": false },
+      { "answer": "Durante o banho", "correct": false },
+      { "answer": "Somente se estiver muito calor", "correct": false },
+      { "answer": "Antes de se expor ao sol", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual destes é um sintoma comum de alergia alimentar?",
+    "options": [
+      { "answer": "Febre alta", "correct": false },
+      { "answer": "Perda de visão", "correct": false },
+      { "answer": "Inchaço e coceira", "correct": true },
+      { "answer": "Dores nas articulações", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a principal forma de prevenir o câncer de pele?",
+    "options": [
+      { "answer": "Evitar exposição prolongada ao sol e usar protetor solar", "correct": true },
+      { "answer": "Tomar suplementos vitamínicos", "correct": false },
+      { "answer": "Beber bastante água", "correct": false },
+      { "answer": "Evitar tomar sol pela manhã", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é o benefício de praticar exercícios físicos regularmente?",
+    "options": [
+      { "answer": "Aumenta a necessidade de suplementos", "correct": false },
+      { "answer": "Provoca perda de massa muscular", "correct": false },
+      { "answer": "Aumenta o risco de lesões", "correct": false },
+      { "answer": "Reduz o risco de doenças crônicas", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual a melhor forma de prevenir a propagação de vírus respiratórios como a gripe?",
+    "options": [
+      { "answer": "Evitar tomar banho diariamente", "correct": false },
+      { "answer": "Usar máscara em ambientes fechados", "correct": true },
+      { "answer": "Ficar exposto ao sol por muito tempo", "correct": false },
+      { "answer": "Beber leite com mel todos os dias", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual destes alimentos é rico em antioxidantes, ajudando a prevenir o envelhecimento precoce?",
+    "options": [
+      { "answer": "Refrigerante", "correct": false },
+      { "answer": "Manteiga", "correct": false },
+      { "answer": "Frutas vermelhas", "correct": true },
+      { "answer": "Pão branco", "correct": false }
+    ]
+  },
+  {
+    "question": "Como a prática de atividades físicas pode beneficiar a saúde mental?",
+    "options": [
+      { "answer": "Provoca insônia", "correct": false },
+      { "answer": "Aumenta o risco de depressão", "correct": false },
+      { "answer": "Reduz o estresse e a ansiedade", "correct": true },
+      { "answer": "Causa cansaço extremo", "correct": false }
+    ]
+  },
+  {
+    "question": "O que é mais eficaz para evitar infecções alimentares?",
+    "options": [
+      { "answer": "Comer alimentos crus", "correct": false },
+      { "answer": "Cozinhar bem os alimentos", "correct": true },
+      { "answer": "Consumir alimentos muito condimentados", "correct": false },
+      { "answer": "Manter os alimentos expostos ao ar livre", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual dos seguintes comportamentos pode aumentar o risco de obesidade?",
+    "options": [
+      { "answer": "Beber bastante água", "correct": false },
+      { "answer": "Comer vegetais todos os dias", "correct": false },
+      { "answer": "Dormir 8 horas por noite", "correct": false },
+      { "answer": "Sedentarismo e má alimentação", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual a melhor maneira de evitar lesões durante a prática de exercícios físicos?",
+    "options": [
+      { "answer": "Fazer aquecimento e alongamento", "correct": true },
+      { "answer": "Começar com exercícios intensos", "correct": false },
+      { "answer": "Não usar tênis adequado", "correct": false },
+      { "answer": "Treinar todos os dias sem descanso", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a principal medida para prevenir a transmissão de doenças sexualmente transmissíveis (DSTs)?",
+    "options": [
+      { "answer": "Fazer atividade física regularmente", "correct": false },
+      { "answer": "Tomar banho após o ato sexual", "correct": false },
+      { "answer": "Usar roupas de algodão", "correct": false },
+      { "answer": "Usar preservativo em todas as relações sexuais", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual é o sintoma mais comum da desidratação?",
+    "options": [
+      { "answer": "Febre alta", "correct": false },
+      { "answer": "Visão turva", "correct": false },
+      { "answer": "Sede intensa", "correct": true },
+      { "answer": "Dores nas articulações", "correct": false }
+    ]
+  },
+  {
+    "question": "Como as vacinas atuam no corpo humano?",
+    "options": [
+      { "answer": "Curam doenças crônicas", "correct": false },
+      { "answer": "Estimulam o sistema imunológico a reconhecer e combater patógenos", "correct": true },
+      { "answer": "Aumentam a produção de vitaminas", "correct": false },
+      { "answer": "Previne todas as doenças para sempre", "correct": false }
+    ]
+  },
+  {
+    "question": "O que pode ajudar a melhorar a qualidade do sono?",
+    "options": [
+      { "answer": "Usar eletrônicos antes de dormir", "correct": false },
+      { "answer": "Comer grandes refeições à noite", "correct": false },
+      { "answer": "Estabelecer uma rotina de horários para dormir", "correct": true },
+      { "answer": "Exagerar no consumo de cafeína", "correct": false }
     ]
   }
 ]
