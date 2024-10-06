@@ -36,7 +36,6 @@ function renderQuestion() {
 }
 
 function checkAnswer(optionIndex) {
-  clickEnabled = false;
   const currentQuestion = quizQuestions[currentQuestionIndex];
   const selectedOption = currentQuestion.options[optionIndex];
 
@@ -53,8 +52,6 @@ function checkAnswer(optionIndex) {
     alert("Fim do Quiz!");
     currentQuestionIndex = 0;
   }
-
-  clickEnabled = true;
 }
 
 document.querySelector("#btnA").addEventListener("click", () => checkAnswer(0));

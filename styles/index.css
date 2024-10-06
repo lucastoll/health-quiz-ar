@@ -38,3 +38,11 @@ a-scene {
   cursor: pointer;
   z-index: 20;
 }
+
+.toggle-ar {
+  position: fixed;
+  bottom: 112px;
+  right: 24px;
+  font-size: 28px;
+  z-index: 20;
+}
