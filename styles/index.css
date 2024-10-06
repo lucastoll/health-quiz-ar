@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
 
+:root {
+  --maingreen: #3fbb84;
+  --mainblue: #175696;
+  --mainwhite: #ffffff;
+}
+
 * {
   font-family: "Salsa", cursive;
   font-weight: 400;
@@ -11,6 +17,11 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background: var(--maingreen);
+}
+
+.ar-mode {
+  background: none;
 }
 
 a-scene {
@@ -22,27 +33,86 @@ a-scene {
   z-index: 1;
 }
 
-.quiz-buttons {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 10;
-}
-
-.quiz-buttons button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 20;
-}
-
 .toggle-ar {
   position: fixed;
   bottom: 112px;
   right: 24px;
   font-size: 28px;
   z-index: 20;
+}
+
+.quiz-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: var(--maingreen);
+  border-top: 2px solid var(--mainblue);
+  width: 100%;
+  height: fit-content;
+}
+
+.quiz-buttons__option {
+  display: none;
+}
+
+.ar-mode .quiz-buttons__option,
+.quiz-buttons__power button {
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 20;
+  background: none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid var(--mainblue);
+  color: var(--mainblue);
+  font-size: 20px;
+}
+
+.quiz-buttons__arrow {
+  display: none;
+}
+
+.ar-mode .quiz-buttons__arrow {
+  display: flex;
+  width: 32px;
+  height: 20px;
+  position: absolute;
+  right: 8px;
+  top: 12px;
+}
+
+.quiz-buttons__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  height: 90px;
+  padding: 0 50px;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.quiz-buttons__power {
+  display: none;
+}
+
+.ar-mode .quiz-buttons--toggle .quiz-buttons__power,
+.no-ar-mode .quiz-buttons__power {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--mainblue);
+}
+
+.quiz-buttons--toggle .quiz-buttons__option {
+  display: none;
 }

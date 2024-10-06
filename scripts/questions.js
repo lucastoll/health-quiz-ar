@@ -7,6 +7,7 @@ function loadQuestions() {
     .then((data) => {
       quizQuestions = data;
       console.log("Questions loaded:", quizQuestions);
+      shuffleQuestions();
       renderQuestion();
     })
     .catch((error) => console.error("Failed to load questions:", error));
@@ -54,7 +55,13 @@ function checkAnswer(optionIndex) {
   }
 }
 
-document.querySelector("#btnA").addEventListener("click", () => checkAnswer(0));
-document.querySelector("#btnB").addEventListener("click", () => checkAnswer(1));
-document.querySelector("#btnC").addEventListener("click", () => checkAnswer(2));
-document.querySelector("#btnD").addEventListener("click", () => checkAnswer(3));
+function shuffleQuestions() {
+  for (let i = quizQuestions.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [quizQuestions[i], quizQuestions[j]] = [quizQuestions[j], quizQuestions[i]];
+  }
+}
+
+document.querySelectorAll(".quiz-buttons__option").forEach((button, index) => {
+  button.addEventListener("click", () => checkAnswer(index));
+});

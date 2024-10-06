@@ -8,21 +8,41 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <link rel="stylesheet" href="styles/index.css" />
     <script type="module" src="scripts/questions.js"></script>
+    <script type="module" src="scripts/ARmode.js"></script>
     <script type="module" src="scripts/ui.js"></script>
   </head>
   <body>
-    <div class="mutual">
-      <div class="quiz-buttons">
-        <button id="btnA">Opção A</button>
-        <button id="btnB">Opção B</button>
-        <button id="btnC">Opção C</button>
-        <button id="btnD">Opção D</button>
-      </div>
-      <button class="toggle-ar">AR</button>
-    </div>
-
     <div class="no-ar-mode">
       <h1>teste</h1>
+    </div>
+
+    <button class="toggle-ar">AR</button>
+    <div class="quiz-buttons">
+      <div class="quiz-buttons__container">
+        <button class="quiz-buttons__option" data-option="A">A</button>
+        <button class="quiz-buttons__option" data-option="B">B</button>
+        <button class="quiz-buttons__option" data-option="C">C</button>
+        <button class="quiz-buttons__option" data-option="D">D</button>
+        <div class="quiz-buttons__power quiz-buttons__power--skip">
+          <button>
+            <img src="./assets/icons/Swap.svg" alt="Trocar questão" />
+          </button>
+          <span> Pular </span>
+        </div>
+        <div class="quiz-buttons__power quiz-buttons__power--less-options">
+          <button>
+            <img src="./assets/icons/Remove.svg" alt="Menos opções" />
+          </button>
+          <span>Menos opções</span>
+        </div>
+        <div class="quiz-buttons__power quiz-buttons__power--help">
+          <button>
+            <img src="./assets/icons/Syringe.svg" alt="Ajuda do Zé Gotinha" />
+          </button>
+          <span>Ajuda</span>
+        </div>
+        <img class="quiz-buttons__arrow" src="./assets/icons/Arrow.svg" alt="Ver poderes" />
+      </div>
     </div>
 
     <a-scene class="ar-mode" cursor="rayOrigin: mouse" arjs="debugUIEnabled: false" style="margin: 0; padding: 0; width: 100%; height: 100%; position: absolute" vr-mode-ui="enabled: false">
