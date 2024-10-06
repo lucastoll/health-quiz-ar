@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Qual e a quantidade minima recomendada de agua que uma pessoa deve beber por dia?",
+    "options": [
+      { "answer": "1 litro", "correct": false },
+      { "answer": "2 litros", "correct": true },
+      { "answer": "500 ml", "correct": false },
+      { "answer": "4 litros", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual e o melhor metodo de prevencao contra o virus da gripe?",
+    "options": [
+      { "answer": "Tomar vacina anualmente", "correct": true },
+      { "answer": "Lavar as maos apenas antes das refeicoes", "correct": false },
+      { "answer": "Tomar vitamina C", "correct": false },
+      { "answer": "Usar antibioticos", "correct": false }
+    ]
+  }
+]
