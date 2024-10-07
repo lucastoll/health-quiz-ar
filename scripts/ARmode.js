@@ -20,7 +20,7 @@ function deactivateArMode() {
   document.querySelector("video").style.display = "none";
   arScene.pause();
   arScene.removeAttribute("arjs");
-  noArMode.style.display = "block";
+  noArMode.style.display = "flex";
   arScene.style.display = "none";
   document.body.classList.remove("ar-mode");
   document.body.classList.add("no-ar-mode");

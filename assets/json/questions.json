@@ -11,7 +11,7 @@
   {
     "question": "Qual e o melhor metodo de prevencao contra o virus da gripe?",
     "options": [
-      { "answer": "Lavar as maos apenas antes das refeicoes", "correct": false },
+      { "answer": "Lavar as mãos apenas antes das refeições", "correct": false },
       { "answer": "Tomar vitamina C", "correct": false },
       { "answer": "Tomar vacina anualmente", "correct": true },
       { "answer": "Usar antibioticos", "correct": false }
@@ -32,7 +32,7 @@
       { "answer": "Tomar suplementos", "correct": false },
       { "answer": "Praticar exercícios físicos", "correct": false },
       { "answer": "Consumir alimentos naturais", "correct": false },
-      { "answer": "Usar máscara e higienizar as mãos", "correct": true }
+      { "answer": "Usar máscara e lavar as mãos", "correct": true }
     ]
   },
   {
@@ -105,15 +105,6 @@
       { "answer": "Picada de mosquito", "correct": false },
       { "answer": "Através do suor", "correct": false },
       { "answer": "Relações sexuais sem proteção", "correct": true }
-    ]
-  },
-  {
-    "question": "Qual é a recomendação básica para evitar intoxicação alimentar?",
-    "options": [
-      { "answer": "Cozinhar todos os alimentos por 10 minutos", "correct": false },
-      { "answer": "Lavar as mãos antes de cozinhar", "correct": true },
-      { "answer": "Comer somente alimentos crus", "correct": false },
-      { "answer": "Evitar qualquer tipo de carne", "correct": false }
     ]
   },
   {
@@ -193,7 +184,7 @@
     "options": [
       { "answer": "Dar suplementos vitamínicos", "correct": false },
       { "answer": "Evitar o consumo de frutas", "correct": false },
-      { "answer": "Promover alimentação equilibrada e atividades físicas", "correct": true },
+      { "answer": "Alimentação equilibrada e exercícios", "correct": true },
       { "answer": "Aumentar o tempo de uso de telas", "correct": false }
     ]
   },
@@ -272,7 +263,7 @@
   {
     "question": "O que é uma alimentação balanceada?",
     "options": [
-      { "answer": "Ingestão de alimentos variados e em quantidades adequadas", "correct": true },
+      { "answer": "Ingestão de alimentos variados", "correct": true },
       { "answer": "Comer apenas frutas e vegetais", "correct": false },
       { "answer": "Evitar carboidratos completamente", "correct": false },
       { "answer": "Fazer jejum prolongado", "correct": false }
