@@ -30,6 +30,10 @@ html {
   background: none;
 }
 
+.ar-mode .no-ar-mode {
+  display: none;
+}
+
 a-scene {
   position: absolute;
   top: 0;
@@ -41,10 +45,13 @@ a-scene {
 
 .toggle-ar {
   position: fixed;
-  bottom: 112px;
+  bottom: 102px;
   right: 24px;
-  font-size: 28px;
+  font-size: 24px;
   z-index: 20;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid black;
 }
 
 .quiz-buttons {
@@ -123,12 +130,19 @@ a-scene {
   display: none;
 }
 
+html, body {
+  height: 100% !important;
+  overflow: scroll !important;
+}
+
 .no-ar-mode {
   padding: 16px;
   width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding-bottom: 110px;
 }
 
 .no-ar-mode__question {
@@ -138,7 +152,7 @@ a-scene {
   background: var(--mainwhite);
   border: 2px solid var(--mainblue);
   color: var(--mainblue);
-  font-size: 28px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -166,8 +180,8 @@ a-scene {
   font-size: 32px;
   height: 100px;
   padding: 8px;
-  margin-top: 48px;
-  margin-bottom: 24px;
+  margin-top: 36px;
+  margin-bottom: 4px;
 }
 
 .no-ar-mode__counter {

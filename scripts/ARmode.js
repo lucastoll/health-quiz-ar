@@ -1,6 +1,5 @@
 const toggleArButton = document.querySelector(".toggle-ar");
 const arScene = document.querySelector(".ar-mode");
-const noArMode = document.querySelector(".no-ar-mode");
 
 export let arModeActive = false;
 
@@ -16,11 +15,9 @@ function toggleArMode() {
 }
 
 function deactivateArMode() {
-  console.log("Deactivating AR mode");
   document.querySelector("video").style.display = "none";
   arScene.pause();
   arScene.removeAttribute("arjs");
-  noArMode.style.display = "flex";
   arScene.style.display = "none";
   document.body.classList.remove("ar-mode");
   document.body.classList.add("no-ar-mode");
