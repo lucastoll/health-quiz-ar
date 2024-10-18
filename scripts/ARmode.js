@@ -31,13 +31,3 @@ function activateArMode() {
   document.body.classList.add("ar-mode");
   document.body.classList.remove("no-ar-mode");
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const interval = setInterval(() => {
-    const videoElement = document.querySelector("video");
-    if (videoElement) {
-      deactivateArMode();
-      clearInterval(interval);
-    }
-  }, 100);
-});

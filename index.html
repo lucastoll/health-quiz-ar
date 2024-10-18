@@ -14,7 +14,13 @@
     <script type="module" src="scripts/ui.js"></script>
   </head>
   <body>
-    <div class="no-ar-mode">
+    <section class="start-screen">
+      <button class="start-button">start</button>
+    </section>
+
+    <section class="end-screen"></section>
+
+    <div class="no-ar-questions">
       <div class="no-ar-mode__question">
         <span class="no-ar-mode__question-text">
           Qual é a quantidade minima recomendada de água que uma pessoa deve
@@ -77,7 +83,7 @@
     </div>
 
     <a-scene
-      class="ar-mode"
+      class="ar-questions"
       cursor="rayOrigin: mouse"
       arjs="debugUIEnabled: false"
       style="

@@ -30,10 +30,6 @@ html {
   background: none;
 }
 
-.ar-mode .no-ar-mode {
-  display: none;
-}
-
 a-scene {
   position: absolute;
   top: 0;
@@ -135,10 +131,10 @@ html, body {
   overflow: scroll !important;
 }
 
-.no-ar-mode {
+.no-ar-questions {
   padding: 16px;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -214,4 +210,13 @@ html, body {
 
 .no-ar-mode__option-text {
   color: var(--mainblue);
+}
+
+.no-ar-questions, .ar-questions, .quiz-buttons__container, .toggle-ar {
+  display: none;
+}
+
+.start-button {
+  position: relative;
+  z-index: 10;
 }

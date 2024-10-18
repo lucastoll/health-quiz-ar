@@ -3,9 +3,18 @@ import { updateCountdownTimer, timeoutCountdownId, setCountdownTimer } from "./c
 
 export let currentQuestionIndex = 0;
 export let questionCounter = 1;
+
+export function setCurrentQuestionIndex(number) {
+  currentQuestionIndex = number;
+}
+
+export function setQuestionCounter(number) {
+  questionCounter = number;
+}
+
 let quizQuestions = [];
 
-function loadQuestions() {
+export function loadQuestions() {
   fetch("../assets/json/questions.json")
     .then((response) => response.json())
     .then((data) => {
@@ -16,8 +25,6 @@ function loadQuestions() {
     })
     .catch((error) => console.error("Failed to load questions:", error));
 }
-
-loadQuestions();
 
 const noArModeQuestionText = document.querySelector(".no-ar-mode__question-text");
 const questionText = document.querySelector("#questionText");
@@ -57,6 +64,7 @@ function checkAnswer(optionIndex) {
     questionCounter++;
   } else {
     endGame("Errado!");
+    return
   }
 
   currentQuestionIndex++;
