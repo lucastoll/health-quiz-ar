@@ -52,7 +52,7 @@ export function renderQuestion() {
   optionsElementsTexts[3].textContent = currentQuestion.options[3].answer;
 }
 
-function checkAnswer(optionIndex) {
+function checkAnswer(optionIndex, button) {
   if (timeoutCountdownId) {
     clearTimeout(timeoutCountdownId);
   }
@@ -60,26 +60,32 @@ function checkAnswer(optionIndex) {
   const selectedOption = currentQuestion.options[optionIndex];
 
   if (selectedOption.correct) {
-    alert("Correto!");
+    button.classList.add("blinking-border-correct");
+  } else {
+    button.classList.add("blinking-border-wrong");
+  }
 
-    if (questionCounter === 10) {
-      endGame("Fim do Quiz!", false);
-      showEndScreen();
+  setTimeout(() => {
+    button.classList.remove("blinking-border-correct", "blinking-border-wrong");
+
+    if (selectedOption.correct) {
+      if (questionCounter === 10) {
+        endGame(false);
+        showEndScreen();
+        return;
+      }
+
+      questionCounter++;
+    } else {
+      endGame();
       return;
     }
 
-    questionCounter++;
-  } else {
-    endGame("Errado!");
-    return;
-  }
-
-  currentQuestionIndex++;
-  if (currentQuestionIndex < quizQuestions.length) {
-    renderQuestion();
-  } else {
-    endGame("Fim do Quiz!");
-  }
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizQuestions.length) {
+      renderQuestion();
+    }
+  }, 2000);
 }
 
 function shuffleQuestions() {
@@ -93,7 +99,7 @@ const noArModeOptionsElements = document.querySelectorAll(".no-ar-mode__option")
 const arModeOptions = document.querySelectorAll(".quiz-buttons__option");
 
 noArModeOptionsElements.forEach((button, index) => {
-  button.addEventListener("click", () => checkAnswer(index));
+  button.addEventListener("click", () => checkAnswer(index, button));
 });
 
 arModeOptions.forEach((button, index) => {

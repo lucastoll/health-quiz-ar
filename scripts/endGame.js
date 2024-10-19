@@ -2,8 +2,7 @@ import { setCurrentQuestionIndex, setQuestionCounter } from "./questions/index.j
 import { resetPowers } from "./questions/powers.js";
 import { returnToStartScreen } from "./ui.js";
 
-export function endGame(message, returnToStart = true) {
-  alert(message);
+export function endGame(returnToStart = true) {
   setCurrentQuestionIndex(0);
   if (returnToStart) {
     returnToStartScreen();

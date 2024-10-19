@@ -234,3 +234,37 @@ body {
 .toggle-ar {
   display: none;
 }
+
+.blinking-border-correct {
+  border: 2px solid green;
+  animation: blink-correct 1s infinite;
+}
+
+.blinking-border-wrong {
+  border: 2px solid red;
+  animation: blink-wrong 1s infinite;
+}
+
+@keyframes blink-correct {
+  0% {
+    border-color: green;
+  }
+  50% {
+    border-color: lightgreen;
+  }
+  100% {
+    border-color: green;
+  }
+}
+
+@keyframes blink-wrong {
+  0% {
+    border-color: red;
+  }
+  50% {
+    border-color: darkred;
+  }
+  100% {
+    border-color: red;
+  }
+}

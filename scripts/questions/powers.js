@@ -2,7 +2,7 @@ import { currentQuestionIndex, quizQuestions, renderQuestion, setCurrentQuestion
 
 export let skipPowerCount = 3;
 export let lessOptionsUsed = false;
-export let helpUsed = true;
+export let helpUsed = false;
 
 const skipButton = document.querySelector(".quiz-buttons__power--skip");
 const skipButtonLabel = document.querySelector(".quiz-buttons__skip-span");
@@ -63,7 +63,7 @@ export let helpActive = false;
 helpButton.addEventListener("click", showCorrectOption);
 
 function showCorrectOption() {
-  if (helpUsed) {
+  if (!helpUsed) {
     helpUsed = true;
     helpActive = true;
 
@@ -78,8 +78,8 @@ function showCorrectOption() {
     const correctOptionIndex = currentQuestion.options.findIndex((option) => option.correct);
     correctAnswerSpan.textContent = indexes[correctOptionIndex];
 
-    help.style.opacity = 1;
     help.style.display = "block";
+    help.style.opacity = 1;
 
     setTimeout(() => {
       help.style.opacity = 0;
