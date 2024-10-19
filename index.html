@@ -8,18 +8,23 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/startscreen.css" />
+    <link rel="stylesheet" href="styles/powers.css" />
     <script type="module" src="scripts/endGame.js"></script>
     <script type="module" src="scripts/questions/countdown.js"></script>
     <script type="module" src="scripts/questions/index.js"></script>
     <script type="module" src="scripts/ARmode.js"></script>
     <script type="module" src="scripts/ui.js"></script>
     <script type="module" src="scripts/startScreen.js"></script>
+    <script type="module" src="scripts/questions/powers.js"></script>
   </head>
   <body class="no-ar-mode">
     <section class="start-screen">
       <div class="container">
         <div class="quiz-box">
-          <img class="logo" src="/assets/images/zegotinha.png" alt="Zé Gotinha" />
+          <video class="logo" muted playsinline>
+            <source src="/assets/images/ZeGotinhaVideo.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos HTML5.
+          </video>
           <h1>Quiz do Zé Gotinha</h1>
           <button class="play-button start-button">JOGAR</button>
           <button class="info-button">COMO FUNCIONA?</button>
@@ -72,24 +77,54 @@
         <button class="quiz-buttons__option" data-option="D">D</button>
         <div class="quiz-buttons__power quiz-buttons__power--skip">
           <button>
-            <img src="./assets/icons/Swap.svg" alt="Trocar questão" />
+            <svg width="28" height="23" viewBox="0 0 28 23" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+              <path class="pathskip" d="M22.3276 11.2586L27.8448 5.74136L22.3276 0.224121V4.36205H1.63792V7.12067H22.3276V11.2586Z" fill="#175696" />
+              <path class="pathskip" d="M5.77586 11.2585L0.258621 16.7758L5.77586 22.293V18.1551H26.4655V15.3965H5.77586V11.2585Z" fill="#175696" />
+            </svg>
           </button>
-          <span> Pular </span>
+          <span class="quiz-buttons__skip-span"> Pular 3/3</span>
         </div>
         <div class="quiz-buttons__power quiz-buttons__power--less-options">
           <button>
-            <img src="./assets/icons/Remove.svg" alt="Menos opções" />
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_15_365)">
+                <path
+                  class="pathEliminate"
+                  d="M20.3611 13.25H4.625V16H20.3611V13.25ZM20.3611 7.75H4.625V10.5H20.3611V7.75ZM4.625 21.5H14.6389V18.75H4.625V21.5ZM20.9476 29.75L24.6528 26.1887L28.3579 29.75L30.375 27.8113L26.6699 24.25L30.375 20.6887L28.3579 18.75L24.6528 22.3113L20.9476 18.75L18.9306 20.6887L22.6357 24.25L18.9306 27.8113L20.9476 29.75Z"
+                  fill="#175696"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_15_365">
+                  <rect width="33" height="33" fill="white" transform="translate(0.5 0.5)" />
+                </clipPath>
+              </defs>
+            </svg>
           </button>
           <span>Menos opções</span>
         </div>
         <div class="quiz-buttons__power quiz-buttons__power--help">
           <button>
-            <img src="./assets/icons/Syringe.svg" alt="Ajuda do Zé Gotinha" />
+            <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                class="pathHelp"
+                d="M0.8625 12.8655C0.610417 12.5905 0.484375 12.264 0.484375 11.8858C0.484375 11.5077 0.610417 11.1812 0.8625 10.9062L4.7125 7.05615L3.23438 5.57803L2.82188 5.99053C2.54688 6.26553 2.22031 6.40303 1.84219 6.40303C1.46406 6.40303 1.1375 6.26553 0.8625 5.99053C0.610417 5.71553 0.484375 5.38896 0.484375 5.01084C0.484375 4.63271 0.610417 4.31761 0.8625 4.06553L3.6125 1.31553C3.8875 1.04053 4.21406 0.903027 4.59219 0.903027C4.97031 0.903027 5.29688 1.04053 5.57188 1.31553C5.84688 1.56761 5.98438 1.88844 5.98438 2.27803C5.98438 2.66761 5.84688 2.98844 5.57188 3.24053L5.15938 3.65303L6.6375 5.13115L10.4875 1.28115C10.7625 1.00615 11.0891 0.868652 11.4672 0.868652C11.8453 0.868652 12.1719 1.00615 12.4469 1.28115C12.7219 1.55615 12.8594 1.88271 12.8594 2.26084C12.8594 2.63896 12.7219 2.96553 12.4469 3.24053L11.5188 4.13428L13.65 6.26553L9.76563 10.1155C9.51354 10.3905 9.3875 10.7171 9.3875 11.0952C9.3875 11.4733 9.51354 11.7999 9.76563 12.0749C10.0406 12.3499 10.3672 12.4874 10.7453 12.4874C11.1234 12.4874 11.45 12.3499 11.725 12.0749L15.575 8.19053L17.6719 10.253L13.7875 14.1374C13.5125 14.4124 13.375 14.739 13.375 15.1171C13.375 15.4952 13.5125 15.8218 13.7875 16.0968C14.0396 16.3489 14.3547 16.4692 14.7328 16.4577C15.1109 16.4463 15.4375 16.3145 15.7125 16.0624L19.5625 12.178L21.6594 14.2749C22.1865 14.802 22.45 15.4494 22.45 16.2171C22.45 16.9848 22.1865 17.6322 21.6594 18.1593L20.6969 19.1562L26.025 24.4499C26.2542 24.6791 26.3115 24.9312 26.1969 25.2062C26.0823 25.4812 25.8646 25.6187 25.5437 25.6187H24.1344C23.8594 25.6187 23.5901 25.5614 23.3266 25.4468C23.063 25.3322 22.8396 25.1832 22.6563 24.9999L18.7375 21.0812L17.775 22.078C17.2479 22.6051 16.6005 22.8687 15.8328 22.8687C15.0651 22.8687 14.4177 22.6051 13.8906 22.078L3.75 11.9374L2.82188 12.8655C2.54688 13.1176 2.22031 13.2437 1.84219 13.2437C1.46406 13.2437 1.1375 13.1176 0.8625 12.8655Z"
+                fill="#175696"
+              />
+            </svg>
           </button>
           <span>Ajuda</span>
         </div>
         <img class="quiz-buttons__arrow" src="./assets/icons/Arrow.svg" alt="Ver poderes" />
       </div>
+    </div>
+
+    <div class="help">
+      <div class="dialog">
+        <img src="/assets/images/dialog.png" alt="" />
+        <div>A resposta correta é a letra: <span class="help__correct-answer">A</span></div>
+      </div>
+      <img src="/assets/images/zegotinha.png" alt="Zé Gotinha" />
     </div>
 
     <a-scene class="ar-questions" cursor="rayOrigin: mouse" arjs="debugUIEnabled: false" style="margin: 0; padding: 0; width: 100%; height: 100%; position: absolute" vr-mode-ui="enabled: false">

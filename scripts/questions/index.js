@@ -1,5 +1,6 @@
 import { endGame } from "../endGame.js";
 import { updateCountdownTimer, timeoutCountdownId, setCountdownTimer } from "./countdown.js";
+import { resetOptionsStyleDisplay } from "./powers.js";
 
 export let currentQuestionIndex = 0;
 export let questionCounter = 1;
@@ -12,7 +13,7 @@ export function setQuestionCounter(number) {
   questionCounter = number;
 }
 
-let quizQuestions = [];
+export let quizQuestions = [];
 
 export function loadQuestions() {
   fetch("../assets/json/questions.json")
@@ -30,7 +31,6 @@ const noArModeQuestionText = document.querySelector(".no-ar-mode__question-text"
 const questionText = document.querySelector("#questionText");
 const questionCounterText = document.querySelector(".no-ar-mode__question-counter");
 
-
 export function renderQuestion() {
   if (timeoutCountdownId) {
     clearTimeout(timeoutCountdownId);
@@ -40,6 +40,7 @@ export function renderQuestion() {
   questionText.setAttribute("value", currentQuestion.question);
   noArModeQuestionText.textContent = currentQuestion.question;
   questionCounterText.textContent = `${questionCounter}/10`;
+  resetOptionsStyleDisplay();
   updateCountdownTimer();
 
   // Seleciona todos os elementos de opção
@@ -64,7 +65,7 @@ function checkAnswer(optionIndex) {
     questionCounter++;
   } else {
     endGame("Errado!");
-    return
+    return;
   }
 
   currentQuestionIndex++;

@@ -56,7 +56,9 @@ function updateModalText() {
         <p>Durante o quiz, você terá <b class="modal-highlight">3 poderes especiais</b> para te ajudar a chegar mais longe:</p>
         <br/>
         <p><b class="modal-highlight">Pular a Pergunta:</b> Não sabe a resposta? Use este poder para passar para a próxima.</p>
+        <br/>
         <p><b class="modal-highlight">Eliminar Alternativas:</b> Deixe o desafio um pouco mais fácil, removendo duas alternativas erradas.</p>
+        <br/>
         <p><b class="modal-highlight">Ajuda do Zé Gotinha:</b> Quando estiver em dúvida, peça ajuda do Zé Gotinha para dar uma dica.</p>
         <br/>
         <p class="modal-highlight">2/3</p>

@@ -28,3 +28,12 @@ startButton.addEventListener("click", () => {
 
   startScreen.style.display = "none";
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const logo = document.querySelector(".logo");
+    if (logo) {
+      logo.play();
+    }
+  }, 1500);
+});
