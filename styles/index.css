@@ -4,6 +4,7 @@
   --maingreen: #3fbb84;
   --mainblue: #175696;
   --mainwhite: #ffffff;
+  --disabled: #d1d1d1;
 }
 
 * {
@@ -42,7 +43,7 @@ a-scene {
 .toggle-ar {
   position: fixed;
   bottom: 102px;
-  right: 24px;
+  left: 24px;
   font-size: 24px;
   z-index: 20;
   background: #ffffff;
@@ -81,6 +82,15 @@ a-scene {
   border: 2px solid var(--mainblue);
   color: var(--mainblue);
   font-size: 20px;
+}
+
+.quiz-buttons__power--disabled button {
+  border: 2px solid var(--disabled);
+  color: var(--disabled);
+}
+
+.quiz-buttons__power--disabled span {
+  color: var(--disabled);
 }
 
 .quiz-buttons__arrow {
