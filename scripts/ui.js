@@ -4,6 +4,7 @@ import { loadQuestions } from "./questions/index.js";
 const quizButtons = document.querySelector(".quiz-buttons");
 const arrow = document.querySelector(".quiz-buttons__arrow");
 const startButton = document.querySelector(".start-button");
+const startScreen = document.querySelector(".start-screen");
 
 arrow.addEventListener("click", () => {
   quizButtons.classList.toggle("quiz-buttons--toggle");
@@ -11,7 +12,7 @@ arrow.addEventListener("click", () => {
 });
 
 startButton.addEventListener("click", () => {
-  document.querySelectorAll(".quiz-buttons__container, .toggle-ar").forEach(element => {
+  document.querySelectorAll(".quiz-buttons__container, .toggle-ar").forEach((element) => {
     element.style.display = "flex";
   });
 
@@ -25,7 +26,5 @@ startButton.addEventListener("click", () => {
 
   loadQuestions();
 
-  console.log("startButton clicked");
-
-  startButton.style.display = "none";
+  startScreen.style.display = "none";
 });

@@ -1,5 +1,5 @@
 const toggleArButton = document.querySelector(".toggle-ar");
-const arScene = document.querySelector(".ar-mode");
+const arScene = document.querySelector(".ar-questions");
 
 export let arModeActive = false;
 

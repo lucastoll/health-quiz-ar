@@ -7,25 +7,39 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/startscreen.css" />
     <script type="module" src="scripts/endGame.js"></script>
     <script type="module" src="scripts/questions/countdown.js"></script>
     <script type="module" src="scripts/questions/index.js"></script>
     <script type="module" src="scripts/ARmode.js"></script>
     <script type="module" src="scripts/ui.js"></script>
+    <script type="module" src="scripts/startScreen.js"></script>
   </head>
-  <body>
+  <body class="no-ar-mode">
     <section class="start-screen">
-      <button class="start-button">start</button>
+      <div class="container">
+        <div class="quiz-box">
+          <img class="logo" src="/assets/images/zegotinha.png" alt="Zé Gotinha" />
+          <h1>Quiz do Zé Gotinha</h1>
+          <button class="play-button start-button">JOGAR</button>
+          <button class="info-button">COMO FUNCIONA?</button>
+        </div>
+      </div>
+
+      <div id="infoModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="modal-text"></div>
+          <button class="next-button">CONTINUAR</button>
+        </div>
+      </div>
     </section>
 
     <section class="end-screen"></section>
 
     <div class="no-ar-questions">
       <div class="no-ar-mode__question">
-        <span class="no-ar-mode__question-text">
-          Qual é a quantidade minima recomendada de água que uma pessoa deve
-          beber por dia?
-        </span>
+        <span class="no-ar-mode__question-text"> Qual é a quantidade minima recomendada de água que uma pessoa deve beber por dia? </span>
         <div class="no-ar-mode__question-counter">1/10</div>
       </div>
       <div class="no-ar-mode__counter-container">
@@ -74,73 +88,22 @@
           </button>
           <span>Ajuda</span>
         </div>
-        <img
-          class="quiz-buttons__arrow"
-          src="./assets/icons/Arrow.svg"
-          alt="Ver poderes"
-        />
+        <img class="quiz-buttons__arrow" src="./assets/icons/Arrow.svg" alt="Ver poderes" />
       </div>
     </div>
 
-    <a-scene
-      class="ar-questions"
-      cursor="rayOrigin: mouse"
-      arjs="debugUIEnabled: false"
-      style="
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-      "
-      vr-mode-ui="enabled: false"
-    >
+    <a-scene class="ar-questions" cursor="rayOrigin: mouse" arjs="debugUIEnabled: false" style="margin: 0; padding: 0; width: 100%; height: 100%; position: absolute" vr-mode-ui="enabled: false">
       <a-marker preset="hiro">
         <!--
         <a-box id="myBox" scale="1 0.25 1" opacity="1" color="red"
                 animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 1000; startEvents: click">
         </a-box>
         -->
-        <a-text
-          id="questionText"
-          value="Pergunta"
-          rotation="-90 0 0"
-          position="-2 0 0"
-          scale="2 2 2"
-          color="blue"
-        ></a-text>
-        <a-text
-          id="optionA"
-          value="Opcao A"
-          scale="2 2 2"
-          rotation="-90 0 0"
-          position="-2 0 0.7"
-          color="red"
-        ></a-text>
-        <a-text
-          id="optionB"
-          value="Opcao B"
-          scale="2 2 2"
-          rotation="-90 0 0"
-          position="-2 0 1.4"
-          color="red"
-        ></a-text>
-        <a-text
-          id="optionC"
-          value="Opcao C"
-          scale="2 2 2"
-          rotation="-90 0 0"
-          position="-2 0 2.1"
-          color="red"
-        ></a-text>
-        <a-text
-          id="optionD"
-          value="Opcao D"
-          scale="2 2 2"
-          rotation="-90 0 0"
-          position="-2 0 2.8"
-          color="red"
-        ></a-text>
+        <a-text id="questionText" value="Pergunta" rotation="-90 0 0" position="-2 0 0" scale="2 2 2" color="blue"></a-text>
+        <a-text id="optionA" value="Opcao A" scale="2 2 2" rotation="-90 0 0" position="-2 0 0.7" color="red"></a-text>
+        <a-text id="optionB" value="Opcao B" scale="2 2 2" rotation="-90 0 0" position="-2 0 1.4" color="red"></a-text>
+        <a-text id="optionC" value="Opcao C" scale="2 2 2" rotation="-90 0 0" position="-2 0 2.1" color="red"></a-text>
+        <a-text id="optionD" value="Opcao D" scale="2 2 2" rotation="-90 0 0" position="-2 0 2.8" color="red"></a-text>
       </a-marker>
       <a-entity class="camera" camera></a-entity>
     </a-scene>
