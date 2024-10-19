@@ -42,10 +42,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 1500);
 });
 
+const endScreen = document.querySelector(".end-screen");
+
 export function returnToStartScreen() {
   startScreen.style.display = "flex";
+  endScreen.style.display = "none";
   logo.currentTime = 0;
   logo.play();
+  buttons.forEach((element) => {
+    element.style.display = "none";
+  });
+  arQuestions.style.display = "none";
+  noArQuestions.style.display = "none";
+}
+
+const returnButton = document.querySelector(".return-button");
+
+returnButton.addEventListener("click", () => {
+  returnToStartScreen();
+});
+
+export function showEndScreen() {
+  endScreen.style.display = "flex";
   buttons.forEach((element) => {
     element.style.display = "none";
   });

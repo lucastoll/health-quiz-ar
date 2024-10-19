@@ -9,7 +9,7 @@
   height: 100vh;
   width: 100%;
   padding: 0%;
-  background: linear-gradient(90deg, #4AC694 0%, #39B57C 100%);
+  background: linear-gradient(90deg, #4ac694 0%, #39b57c 100%);
 }
 
 body {
@@ -52,14 +52,14 @@ h2 {
   text-align: center;
   color: #090a0a;
 }
-.play-button{
+.play-button {
   background-color: white;
-  color: #47C390;
+  color: #47c390;
 }
 
 .info-button,
-.next-button{
-  background: linear-gradient(90deg, #4AC694 0%, #39B57C 100%);
+.next-button {
+  background: linear-gradient(90deg, #4ac694 0%, #39b57c 100%);
   color: white;
 }
 
@@ -113,7 +113,7 @@ h2 {
   max-width: 400px;
 }
 
-.modal-highlight{
+.modal-highlight {
   color: #175696;
 }
 

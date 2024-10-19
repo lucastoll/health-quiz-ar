@@ -1,4 +1,5 @@
 import { endGame } from "../endGame.js";
+import { showEndScreen } from "../ui.js";
 import { updateCountdownTimer, timeoutCountdownId, setCountdownTimer } from "./countdown.js";
 import { resetOptionsStyleDisplay } from "./powers.js";
 
@@ -43,10 +44,8 @@ export function renderQuestion() {
   resetOptionsStyleDisplay();
   updateCountdownTimer();
 
-  // Seleciona todos os elementos de opção
   const optionsElementsTexts = document.querySelectorAll(".no-ar-mode__option-text");
 
-  // Define o texto para cada opção de resposta
   optionsElementsTexts[0].textContent = currentQuestion.options[0].answer;
   optionsElementsTexts[1].textContent = currentQuestion.options[1].answer;
   optionsElementsTexts[2].textContent = currentQuestion.options[2].answer;
@@ -62,6 +61,13 @@ function checkAnswer(optionIndex) {
 
   if (selectedOption.correct) {
     alert("Correto!");
+
+    if (questionCounter === 10) {
+      endGame("Fim do Quiz!", false);
+      showEndScreen();
+      return;
+    }
+
     questionCounter++;
   } else {
     endGame("Errado!");
