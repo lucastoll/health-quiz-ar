@@ -11,17 +11,21 @@ arrow.addEventListener("click", () => {
   arrow.style.transform = `rotate(${quizButtons.classList.contains("quiz-buttons--toggle") ? 180 : 0}deg)`;
 });
 
+const arQuestions = document.querySelector(".ar-questions");
+const noArQuestions = document.querySelector(".no-ar-questions");
+const buttons = document.querySelectorAll(".quiz-buttons__container, .toggle-ar");
+
 startButton.addEventListener("click", () => {
-  document.querySelectorAll(".quiz-buttons__container, .toggle-ar").forEach((element) => {
+  buttons.forEach((element) => {
     element.style.display = "flex";
   });
 
   if (arModeActive) {
-    document.querySelector(".ar-questions").style.display = "flex";
-    document.querySelector(".no-ar-questions").style.display = "none";
+    arQuestions.style.display = "flex";
+    noArQuestions.style.display = "none";
   } else {
-    document.querySelector(".no-ar-questions").style.display = "flex";
-    document.querySelector(".ar-questions").style.display = "none";
+    noArQuestions.style.display = "flex";
+    arQuestions.style.display = "none";
   }
 
   loadQuestions();
@@ -29,11 +33,22 @@ startButton.addEventListener("click", () => {
   startScreen.style.display = "none";
 });
 
+const logo = document.querySelector(".logo");
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
-    const logo = document.querySelector(".logo");
     if (logo) {
       logo.play();
     }
   }, 1500);
 });
+
+export function returnToStartScreen() {
+  startScreen.style.display = "flex";
+  logo.currentTime = 0;
+  logo.play();
+  buttons.forEach((element) => {
+    element.style.display = "none";
+  });
+  arQuestions.style.display = "none";
+  noArQuestions.style.display = "none";
+}
