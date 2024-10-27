@@ -5,6 +5,7 @@ import { resetOptionsStyleDisplay } from "./powers.js";
 
 export let currentQuestionIndex = 0;
 export let questionCounter = 1;
+let canClickButton = true;
 
 export function setCurrentQuestionIndex(number) {
   currentQuestionIndex = number;
@@ -56,6 +57,17 @@ function checkAnswer(optionIndex, button) {
   if (timeoutCountdownId) {
     clearTimeout(timeoutCountdownId);
   }
+
+  if (!canClickButton) {
+    return;
+  }
+
+  canClickButton = false;
+
+  setTimeout(() => {
+    canClickButton = true;
+  }, 1000);
+
   const currentQuestion = quizQuestions[currentQuestionIndex];
   const selectedOption = currentQuestion.options[optionIndex];
 
