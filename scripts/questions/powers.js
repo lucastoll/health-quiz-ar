@@ -42,8 +42,10 @@ function eliminateWrongOptions() {
     const optionsToEliminate = incorrectOptions.slice(0, 2);
 
     optionsToEliminate.forEach((item) => {
-      const optionElement = document.querySelectorAll(".no-ar-mode__option")[item.index];
-      optionElement.style.display = "none";
+      const noArOptionElement = document.querySelectorAll(".no-ar-mode__option")[item.index];
+      const arOptionElement = document.querySelectorAll(".optionArEntity")[item.index];
+      noArOptionElement.style.display = "none";
+      arOptionElement.setAttribute("visible", "false");
     });
 
     pathEliminate.setAttribute("fill", "#d1d1d1");
@@ -96,9 +98,14 @@ function showCorrectOption() {
 }
 
 export function resetOptionsStyleDisplay() {
-  const optionsElements = document.querySelectorAll(".no-ar-mode__option");
-  optionsElements.forEach((option) => {
+  const noArOptionsElements = document.querySelectorAll(".no-ar-mode__option");
+  const arOptionsElements = document.querySelectorAll(".optionArEntity");
+  noArOptionsElements.forEach((option) => {
     option.style.display = "flex";
+  });
+
+  arOptionsElements.forEach((option) => {
+    option.setAttribute("visible", "true");
   });
 }
 

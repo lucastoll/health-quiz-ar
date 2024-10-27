@@ -138,5 +138,5 @@ noArModeOptionsElements.forEach((button, index) => {
 });
 
 arModeOptions.forEach((button, index) => {
-  button.addEventListener("click", () => checkAnswer(index));
+  button.addEventListener("click", () => checkAnswer(index, button));
 });

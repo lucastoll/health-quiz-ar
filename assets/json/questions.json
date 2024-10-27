@@ -189,15 +189,6 @@
     ]
   },
   {
-    "question": "Qual é a causa mais comum de intoxicação alimentar?",
-    "options": [
-      { "answer": "Excesso de frutas na alimentação", "correct": false },
-      { "answer": "Consumo de alimentos contaminados por bactérias", "correct": true },
-      { "answer": "Beber água em excesso", "correct": false },
-      { "answer": "Consumir alimentos orgânicos", "correct": false }
-    ]
-  },
-  {
     "question": "O que é recomendado para manter a saúde mental em dia?",
     "options": [
       { "answer": "Evitar conversar com amigos", "correct": false },
