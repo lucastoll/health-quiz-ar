@@ -9,15 +9,6 @@
     ]
   },
   {
-    "question": "Qual e o melhor metodo de prevencao contra o virus da gripe?",
-    "options": [
-      { "answer": "Lavar as mãos apenas antes das refeições", "correct": false },
-      { "answer": "Tomar vitamina C", "correct": false },
-      { "answer": "Tomar vacina anualmente", "correct": true },
-      { "answer": "Usar antibioticos", "correct": false }
-    ]
-  },
-  {
     "question": "Quantas horas de sono são recomendadas para um adulto por noite?",
     "options": [
       { "answer": "5 horas", "correct": false },
@@ -384,24 +375,6 @@
       { "answer": "Visão turva", "correct": false },
       { "answer": "Sede intensa", "correct": true },
       { "answer": "Dores nas articulações", "correct": false }
-    ]
-  },
-  {
-    "question": "Como as vacinas atuam no corpo humano?",
-    "options": [
-      { "answer": "Curam doenças crônicas", "correct": false },
-      { "answer": "Estimulam o sistema imunológico a reconhecer e combater patógenos", "correct": true },
-      { "answer": "Aumentam a produção de vitaminas", "correct": false },
-      { "answer": "Previne todas as doenças para sempre", "correct": false }
-    ]
-  },
-  {
-    "question": "O que pode ajudar a melhorar a qualidade do sono?",
-    "options": [
-      { "answer": "Usar eletrônicos antes de dormir", "correct": false },
-      { "answer": "Comer grandes refeições à noite", "correct": false },
-      { "answer": "Estabelecer uma rotina de horários para dormir", "correct": true },
-      { "answer": "Exagerar no consumo de cafeína", "correct": false }
     ]
   }
 ]
