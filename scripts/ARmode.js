@@ -21,10 +21,12 @@ function deactivateArMode() {
   arScene.style.display = "none";
   document.body.classList.remove("ar-mode");
   document.body.classList.add("no-ar-mode");
+  document.querySelector(".no-ar-questions").style.display = "flex";
 }
 
 function activateArMode() {
   document.querySelector("video").style.display = "block";
+  document.querySelector(".no-ar-questions").style.display = "none";
   arScene.setAttribute("arjs", "sourceType: webcam; debugUIEnabled: false;");
   arScene.style.display = "block";
   arScene.play();
