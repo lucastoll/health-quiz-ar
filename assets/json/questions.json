@@ -32,7 +32,7 @@
       { "answer": "Mosquito Aedes aegypti", "correct": true },
       { "answer": "Mosca", "correct": false },
       { "answer": "Ratos", "correct": false },
-      { "answer": "Água contaminada", "correct": false }
+      { "answer": "Agua contaminada", "correct": false }
     ]
   },
   {
@@ -120,7 +120,7 @@
     "question": "Qual a frequência mínima recomendada para a escovacao dos dentes?",
     "options": [
       { "answer": "1 vez ao dia", "correct": false },
-      { "answer": "Apos cada refeição", "correct": false },
+      { "answer": "Apos cada refeicao", "correct": false },
       { "answer": "3 vezes por semana", "correct": false },
       { "answer": "2 vezes ao dia", "correct": true }
     ]
@@ -131,7 +131,7 @@
       { "answer": "Exposicao ao sol", "correct": false },
       { "answer": "Consumo de vitamina C", "correct": false },
       { "answer": "Falta de exercicios fisicos", "correct": true },
-      { "answer": "Beber muita água", "correct": false }
+      { "answer": "Beber muita agua", "correct": false }
     ]
   },
   {
@@ -180,11 +180,11 @@
     ]
   },
   {
-    "question": "Qual a função da vacinação em massa?",
+    "question": "Qual a funcao da vacinacao em massa?",
     "options": [
-      { "answer": "Erradicar doenças preveníveis", "correct": true },
+      { "answer": "Erradicar doencas preveniveis", "correct": true },
       { "answer": "Aumentar a imunidade individual", "correct": false },
-      { "answer": "Melhorar a saúde geral da população", "correct": false },
+      { "answer": "Melhorar a saude geral da populacao", "correct": false },
       { "answer": "Prevenir alergias", "correct": false }
     ]
   },
@@ -225,7 +225,7 @@
     ]
   },
   {
-    "question": "Qual a principal função da fibra alimentar na dieta?",
+    "question": "Qual a principal funcao da fibra alimentar na dieta?",
     "options": [
       { "answer": "Aumentar os níveis de acucar no sangue", "correct": false },
       { "answer": "Fornecer energia", "correct": false },
@@ -281,14 +281,14 @@
   {
     "question": "Qual a principal forma de prevenir o cancer de pele?",
     "options": [
-      { "answer": "Evitar exposição prolongada ao sol e usar protetor solar", "correct": true },
+      { "answer": "Evitar exposição prolongada ao sol", "correct": true },
       { "answer": "Tomar suplementos vitaminicos", "correct": false },
       { "answer": "Beber bastante agua", "correct": false },
       { "answer": "Evitar tomar sol pela manha", "correct": false }
     ]
   },
   {
-    "question": "Qual o benefício de praticar exercícios fisicos regularmente?",
+    "question": "Qual o beneficio de praticar exercícios fisicos regularmente?",
     "options": [
       { "answer": "Aumenta a necessidade de suplementos", "correct": false },
       { "answer": "Provoca perda de massa muscular", "correct": false },
@@ -353,17 +353,17 @@
   {
     "question": "Qual a principal medida para prevenir a transmissão de doenças sexualmente transmissiveis (DSTs)?",
     "options": [
-      { "answer": "Fazer atividade fusica regularmente", "correct": false },
+      { "answer": "Fazer atividade fisica regularmente", "correct": false },
       { "answer": "Tomar banho apos o ato sexual", "correct": false },
       { "answer": "Usar roupas de algodao", "correct": false },
-      { "answer": "Usar preservativo em todas as relações sexuais", "correct": true }
+      { "answer": "Usar preservativo em todas as relacoes sexuais", "correct": true }
     ]
   },
   {
     "question": "Qual o sintoma mais comum da desidratacao?",
     "options": [
       { "answer": "Febre alta", "correct": false },
-      { "answer": "Visão turva", "correct": false },
+      { "answer": "Visao turva", "correct": false },
       { "answer": "Sede intensa", "correct": true },
       { "answer": "Dores nas articulacoes", "correct": false }
     ]

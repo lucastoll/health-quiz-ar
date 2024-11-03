@@ -22,7 +22,6 @@ export function loadQuestions() {
     .then((response) => response.json())
     .then((data) => {
       quizQuestions = data;
-      console.log("Questions loaded:", quizQuestions);
       shuffleQuestions();
       renderQuestion();
     })
@@ -33,15 +32,11 @@ const noArModeQuestionText = document.querySelector(".no-ar-mode__question-text"
 const questionText = document.querySelector("#questionText");
 const questionCounterText = document.querySelector(".no-ar-mode__question-counter");
 
-function removeAccents(str) {
-  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-}
-
 const adjustCharPosition = (optionId, charId) => {
   const optionElement = document.getElementById(optionId);
   const charElement = document.getElementById(charId);
   const textWidth = optionElement.getAttribute("value").length * 0.15;
-  charElement.setAttribute("position", `${-textWidth / 2 - 0.1} 0 0.05`);
+  charElement.setAttribute("position", `${-textWidth / 2 - 0.2} 0 0.05`);
 };
 
 export function renderQuestion() {
@@ -65,10 +60,10 @@ export function renderQuestion() {
 
   const arOptionsElementsTexts = document.querySelectorAll(".optionAr");
 
-  arOptionsElementsTexts[0].setAttribute("value", removeAccents(currentQuestion.options[0].answer));
-  arOptionsElementsTexts[1].setAttribute("value", removeAccents(currentQuestion.options[1].answer));
-  arOptionsElementsTexts[2].setAttribute("value", removeAccents(currentQuestion.options[2].answer));
-  arOptionsElementsTexts[3].setAttribute("value", removeAccents(currentQuestion.options[3].answer));
+  arOptionsElementsTexts[0].setAttribute("value", currentQuestion.options[0].answer);
+  arOptionsElementsTexts[1].setAttribute("value", currentQuestion.options[1].answer);
+  arOptionsElementsTexts[2].setAttribute("value", currentQuestion.options[2].answer);
+  arOptionsElementsTexts[3].setAttribute("value", currentQuestion.options[3].answer);
 
   adjustCharPosition("optionA", "optionAChar");
   adjustCharPosition("optionB", "optionBChar");
@@ -104,7 +99,7 @@ function checkAnswer(optionIndex, button) {
     button.classList.remove("blinking-border-correct", "blinking-border-wrong");
 
     if (selectedOption.correct) {
-      if (questionCounter === 10) {
+      if (questionCounter === 1) {
         endGame(false);
         showEndScreen();
         return;

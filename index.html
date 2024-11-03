@@ -6,6 +6,7 @@
     <title>Quiz do Zé Gotinha</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.5.0/dist/aframe-extras.min.js"></script>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/startscreen.css" />
     <link rel="stylesheet" href="styles/powers.css" />
@@ -24,7 +25,6 @@
         <div class="quiz-box">
           <video class="logo" muted playsinline>
             <source src="/assets/images/ZeGotinhaVideo.mp4" type="video/mp4" />
-            Seu navegador não suporta vídeos HTML5.
           </video>
           <h1>Quiz do Zé Gotinha</h1>
           <button class="play-button start-button">JOGAR</button>
@@ -139,44 +139,70 @@
     </div>
 
     <a-scene class="ar-questions" cursor="rayOrigin: mouse" arjs="debugUIEnabled: false" style="margin: 0; padding: 0; width: 100%; height: 100%; position: absolute" vr-mode-ui="enabled: false">
-      <a-assets>
-        <a-asset-item id="treeModel" src="/assets/GalaxyS10.gltf"></a-asset-item>
-      </a-assets>
       <a-marker preset="hiro">
-        <!--
-        <a-box id="myBox" scale="1 0.25 1" opacity="1" color="red"
-                animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 1000; startEvents: click">
-        </a-box>
-        -->
-        <a-entity id="counterBox" position="0 0 1.5">
-          <a-text id="counterText" value="Tempo: 10" color="green" position="0 0 0.1" rotation="-90 0 0" align="center"></a-text>
+        <a-entity id="counterBox" position="0 0 0">
+          <a-text id="counterText" class="ar-questions-element" value="Tempo: 10" color="green" position="0 0 1.3" rotation="-90 0 0" align="center"></a-text>
         </a-entity>
 
-        <a-entity id="questionBox" position="0 0 -0.3">
-          <a-text id="questionText" value="Pergunta" color="blue" position="0 0 0.02" rotation="-90 0 0" align="center"></a-text>
+        <a-entity id="questionBox" position="0 0 0"></a-entity>
+          <a-text id="questionText" class="ar-questions-element" value="Pergunta" color="blue" position="0 0 -0.7" rotation="-90 0 0" align="center"></a-text>
         </a-entity>
 
-        <a-entity class="optionArEntity" id="optionABox" position="0 0 0.3">
+        <a-entity class="optionArEntity ar-questions-element" id="optionABox" position="0 0 -0.2">
           <a-text id="optionAChar" value="A" color="green" position="-1.5 0 0.05" rotation="-90 0 0" align="left"></a-text>
           <a-text class="optionAr" id="optionA" value="Opcao A" color="blue" position="0 0 0.05" rotation="-90 0 0" align="center"></a-text>
         </a-entity>
 
-        <a-entity class="optionArEntity" id="optionBBox" position="0 0 0.6">
+        <a-entity class="optionArEntity ar-questions-element" id="optionBBox" position="0 0 0.1">
           <a-text id="optionBChar" value="B" color="green" position="-1.5 0 0.05" rotation="-90 0 0" align="left"></a-text>
           <a-text class="optionAr" id="optionB" value="Opcao B" color="blue" position="0 0 0.05" rotation="-90 0 0" align="center"></a-text>
         </a-entity>
 
-        <a-entity class="optionArEntity" id="optionCBox" position="0 0 0.9">
+        <a-entity class="optionArEntity ar-questions-element" id="optionCBox" position="0 0 0.4">
           <a-text id="optionCChar" value="C" color="green" position="-1.5 0 0.05" rotation="-90 0 0" align="left"></a-text>
           <a-text class="optionAr" id="optionC" value="Opcao C" color="blue" position="0 0 0.05" rotation="-90 0 0" align="center"></a-text>
         </a-entity>
 
-        <a-entity class="optionArEntity" id="optionDBox" position="0 0 1.2">
+        <a-entity class="optionArEntity ar-questions-element" id="optionDBox" position="0 0 0.7">
           <a-text id="optionDChar" value="D" color="green" position="-1.5 0 0.05" rotation="-90 0 0" align="left"></a-text>
           <a-text class="optionAr" id="optionD" value="Opcao D" color="blue" position="0 0 0.05" rotation="-90 0 0" align="center"></a-text>
         </a-entity>
 
-        <!-- <a-entity id="tree" gltf-model="#treeModel" position="0 0 0" scale="5 5 5"></a-entity> -->
+        <a-light type="point" position="5 0 0" intensity="2.5"></a-light>
+        <a-light type="point" position="-5 0 0" intensity="2.5"></a-light>
+        <a-light type="point" position="0 5 0" intensity="2.5"></a-light>
+        <a-light type="point" position="0 -5 0" intensity="2.5"></a-light>
+        <a-light type="point" position="0 0 5" intensity="2.5"></a-light>
+        <a-light type="point" position="0 0 -5" intensity="2.5"></a-light>
+
+        <a-text class="ar-end-screen" visible="false" value="Parabens!" position="0 0 0" rotation="-90 0 0" width="4" color="#FFD700" align="center"></a-text>
+        <a-text
+          class="ar-end-screen"
+          value="Voce mostrou ser um verdadeiro especialista em saude e concluiu o Quiz do Ze Gotinha com sucesso!"
+          position="0 0 0.5"
+          rotation="-90 0 0"
+          width="5"
+          color="#FFFFFF"
+          align="center"
+          visible="false"
+        ></a-text>
+        <a-text class="ar-end-screen" visible="false" value="Lembre se: prevencao sempre o melhor remedio!" rotation="-90 0 0" position="0 0 1" width="3.5" color="#FFFFFF" align="center"></a-text>
+        <a-text
+          class="ar-end-screen"
+          visible="false"
+          value="Obrigado por jogar e continue espalhando esse conhecimento por ai. Saude em primeiro lugar"
+          rotation="-90 0 0"
+          position="0 0 1.5"
+          width="3.5"
+          color="#FFFFFF"
+          align="center"
+        ></a-text>
+
+        <button class="ar-return-button">VOLTAR AO ÍNICIO</button>
+
+
+        <a-entity class="ar-end-screen" visible="false" position="0 0 -0.1" rotation="-90 0 0" animation-mixer="clip: *;" gltf-model="/assets/3d/feliz.glb" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity visible="false" position="0 0 0" rotation="-90 0 0" animation-mixer="clip: *;" gltf-model="/assets/3d/apontando.glb" scale="0.1 0.1 0.1"></a-entity>
       </a-marker>
       <a-entity class="camera" camera></a-entity>
     </a-scene>

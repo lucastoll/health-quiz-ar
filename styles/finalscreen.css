@@ -26,7 +26,8 @@
   font-size: 32px;
 }
 
-.return-button {
+.return-button,
+.ar-return-button {
   background: linear-gradient(90deg, #4ac694 0%, #39b57c 100%);
   border: 2px solid white;
   border-radius: 48px;
@@ -41,4 +42,12 @@
   transition: background-color 0.3s ease;
   width: 313px;
   margin-top: 24px;
+}
+
+.ar-return-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
