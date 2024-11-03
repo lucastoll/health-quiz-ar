@@ -23,7 +23,7 @@
       { "answer": "Tomar suplementos", "correct": false },
       { "answer": "Praticar exercícios físicos", "correct": false },
       { "answer": "Consumir alimentos naturais", "correct": false },
-      { "answer": "Usar máscara e lavar as mãos", "correct": true }
+      { "answer": "Usar mascara e lavar as maos", "correct": true }
     ]
   },
   {
@@ -39,9 +39,9 @@
     "question": "Qual a importância de usar protetor solar diariamente?",
     "options": [
       { "answer": "Evitar queimaduras solares", "correct": false },
-      { "answer": "Prevenir câncer de pele", "correct": true },
+      { "answer": "Prevenir cancer de pele", "correct": true },
       { "answer": "Manter a pele hidratada", "correct": false },
-      { "answer": "Reduzir a produção de vitamina D", "correct": false }
+      { "answer": "Reduzir a producao de vitamina D", "correct": false }
     ]
   },
   {
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "question": "Qual a principal forma de prevenir a infecção por hepatite B?",
+    "question": "Qual a principal forma de prevenir a infeccao por hepatite B?",
     "options": [
       { "answer": "Beber agua filtrada", "correct": false },
       { "answer": "Tomar a vacina contra hepatite B", "correct": true },

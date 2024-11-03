@@ -99,7 +99,7 @@ function checkAnswer(optionIndex, button) {
     button.classList.remove("blinking-border-correct", "blinking-border-wrong");
 
     if (selectedOption.correct) {
-      if (questionCounter === 1) {
+      if (questionCounter === 10) {
         endGame(false);
         showEndScreen();
         return;

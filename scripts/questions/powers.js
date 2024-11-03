@@ -1,3 +1,4 @@
+import { arModeActive } from "../ARmode.js";
 import { currentQuestionIndex, quizQuestions, renderQuestion, setCurrentQuestionIndex } from "./index.js";
 
 export let skipPowerCount = 3;
@@ -64,6 +65,12 @@ export let helpActive = false;
 
 helpButton.addEventListener("click", showCorrectOption);
 
+const arHelpAnimation = document.querySelector(".ar-help-animation");
+const arHelpAnswer = document.querySelector(".ar-help-answer");
+const arQuestions = document.querySelectorAll(".ar-questions-element");
+const buttons = document.querySelectorAll(".quiz-buttons__container");
+const toggleAr = document.querySelector(".toggle-ar");
+
 function showCorrectOption() {
   if (!helpUsed) {
     helpUsed = true;
@@ -80,17 +87,55 @@ function showCorrectOption() {
     const correctOptionIndex = currentQuestion.options.findIndex((option) => option.correct);
     correctAnswerSpan.textContent = indexes[correctOptionIndex];
 
-    help.style.display = "block";
-    help.style.opacity = 1;
+    if (!arModeActive) {
+      help.style.display = "block";
+      help.style.opacity = 1;
 
-    setTimeout(() => {
-      help.style.opacity = 0;
-    }, 5000);
+      setTimeout(() => {
+        help.style.opacity = 0;
+      }, 5000);
 
-    setTimeout(() => {
-      help.style.display = "none";
-      helpActive = false;
-    }, 6000);
+      setTimeout(() => {
+        help.style.display = "none";
+        helpActive = false;
+      }, 6000);
+    } else {
+      [arHelpAnimation, arHelpAnswer].forEach((element) => {
+        element.setAttribute("visible", true);
+      });
+
+      console.log(arHelpAnswer);
+
+      arHelpAnswer.setAttribute("value", indexes[correctOptionIndex]);
+
+      arQuestions.forEach((element) => {
+        element.setAttribute("visible", false);
+      });
+
+      buttons.forEach((element) => {
+        element.style.display = "none";
+      });
+
+      toggleAr.style.display = "none";
+
+      setTimeout(() => {
+        [arHelpAnimation, arHelpAnswer].forEach((element) => {
+          element.setAttribute("visible", false);
+        });
+
+        arQuestions.forEach((element) => {
+          element.setAttribute("visible", true);
+        });
+
+        buttons.forEach((element) => {
+          element.style.display = "flex";
+        });
+
+        toggleAr.style.display = "flex";
+
+        helpActive = false;
+      }, 5000);
+    }
 
     pathHelp.setAttribute("fill", "#d1d1d1");
     helpButton.classList.add("quiz-buttons__power--disabled");
