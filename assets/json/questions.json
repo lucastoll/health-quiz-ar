@@ -18,10 +18,10 @@
     ]
   },
   {
-    "question": "Qual destes hábitos se mostra mais eficaz para prevenir a COVID-19?",
+    "question": "Qual destes habitos se mostra mais eficaz para prevenir a COVID-19?",
     "options": [
       { "answer": "Tomar suplementos", "correct": false },
-      { "answer": "Praticar exercícios físicos", "correct": false },
+      { "answer": "Praticar exercicios fisicos", "correct": false },
       { "answer": "Consumir alimentos naturais", "correct": false },
       { "answer": "Usar mascara e lavar as maos", "correct": true }
     ]
@@ -75,7 +75,7 @@
     "question": "Qual o principal sintoma de hipertensao arterial?",
     "options": [
       { "answer": "Fadiga extrema", "correct": false },
-      { "answer": "Dores de cabeça frequentes", "correct": true },
+      { "answer": "Dores de cabeca frequentes", "correct": true },
       { "answer": "Febre alta", "correct": false },
       { "answer": "Tosse persistente", "correct": false }
     ]
@@ -94,14 +94,14 @@
     "options": [
       { "answer": "Contato com saliva", "correct": false },
       { "answer": "Picada de mosquito", "correct": false },
-      { "answer": "Através do suor", "correct": false },
-      { "answer": "Relações sexuais sem protecao", "correct": true }
+      { "answer": "Atraves do suor", "correct": false },
+      { "answer": "Relacões sexuais sem protecao", "correct": true }
     ]
   },
   {
     "question": "Qual o beneficio da pratica regular de atividades fisicas?",
     "options": [
-      { "answer": "Aumenta o cansaço", "correct": false },
+      { "answer": "Aumenta o cansaco", "correct": false },
       { "answer": "Diminui o apetite", "correct": false },
       { "answer": "Provoca dores nas articulacoes", "correct": false },
       { "answer": "Melhora a memoria", "correct": true }
@@ -117,7 +117,7 @@
     ]
   },
   {
-    "question": "Qual a frequência mínima recomendada para a escovacao dos dentes?",
+    "question": "Qual a frequência minima recomendada para a escovacao dos dentes?",
     "options": [
       { "answer": "1 vez ao dia", "correct": false },
       { "answer": "Apos cada refeicao", "correct": false },
@@ -135,7 +135,7 @@
     ]
   },
   {
-    "question": "Qual destes habitos e essencial para prevenir doenças cardiacas?",
+    "question": "Qual destes habitos e essencial para prevenir doencas cardiacas?",
     "options": [
       { "answer": "Comer mais carne vermelha", "correct": false },
       { "answer": "Beber refrigerante", "correct": false },
@@ -157,12 +157,12 @@
     "options": [
       { "answer": "Comer alimentos ricos em fibras", "correct": false },
       { "answer": "Fumar cigarro", "correct": true },
-      { "answer": "Beber café", "correct": false },
+      { "answer": "Beber cafe", "correct": false },
       { "answer": "Praticar esportes", "correct": false }
     ]
   },
   {
-    "question": "Qual é a funcao principal da vitamina D no corpo?",
+    "question": "Qual a funcao principal da vitamina D no corpo?",
     "options": [
       { "answer": "Aumentar o apetite", "correct": false },
       { "answer": "Diminuir a pressão arterial", "correct": false },
@@ -175,7 +175,7 @@
     "options": [
       { "answer": "Dar suplementos vitaminicos", "correct": false },
       { "answer": "Evitar o consumo de frutas", "correct": false },
-      { "answer": "Alimentação equilibrada e exercicios", "correct": true },
+      { "answer": "Alimentacão equilibrada e exercicios", "correct": true },
       { "answer": "Aumentar o tempo de uso de telas", "correct": false }
     ]
   },
@@ -207,11 +207,11 @@
     ]
   },
   {
-    "question": "Qual o melhor método para prevenir caries dentarias?",
+    "question": "Qual o melhor metodo para prevenir caries dentarias?",
     "options": [
       { "answer": "Beber bastante agua", "correct": false },
       { "answer": "Evitar comer carne", "correct": false },
-      { "answer": "Escovar os dentes após cada refeicao", "correct": true },
+      { "answer": "Escovar os dentes apos cada refeicao", "correct": true },
       { "answer": "Tomar suplemento de calcio", "correct": false }
     ]
   },
@@ -227,14 +227,14 @@
   {
     "question": "Qual a principal funcao da fibra alimentar na dieta?",
     "options": [
-      { "answer": "Aumentar os níveis de acucar no sangue", "correct": false },
+      { "answer": "Aumentar os niveis de acucar no sangue", "correct": false },
       { "answer": "Fornecer energia", "correct": false },
       { "answer": "Ajudar na digestao", "correct": true },
       { "answer": "Fortalecer os ossos", "correct": false }
     ]
   },
   {
-    "question": "Qual das seguintes doenças pode ser prevenida com o uso de repelente contra insetos?",
+    "question": "Qual das seguintes doencas pode ser prevenida com o uso de repelente contra insetos?",
     "options": [
       { "answer": "Tuberculose", "correct": false },
       { "answer": "Dengue", "correct": true },
@@ -243,7 +243,7 @@
     ]
   },
   {
-    "question": "O que se mostra uma alimentação balanceada?",
+    "question": "O que se mostra uma alimentacão balanceada?",
     "options": [
       { "answer": "Ingestão de alimentos variados", "correct": true },
       { "answer": "Comer apenas frutas e vegetais", "correct": false },
@@ -257,13 +257,13 @@
       { "answer": "Tomar apenas sucos naturais", "correct": false },
       { "answer": "Beber agua apenas quando sentir sede", "correct": false },
       { "answer": "Beber agua regularmente ao longo do dia", "correct": true },
-      { "answer": "Tomar café frequentemente", "correct": false }
+      { "answer": "Tomar cafe frequentemente", "correct": false }
     ]
   },
   {
     "question": "Qual o melhor momento para aplicar o protetor solar?",
     "options": [
-      { "answer": "Após começar a se bronzear", "correct": false },
+      { "answer": "Apos comecar a se bronzear", "correct": false },
       { "answer": "Durante o banho", "correct": false },
       { "answer": "Somente se estiver muito calor", "correct": false },
       { "answer": "Antes de se expor ao sol", "correct": true }
@@ -274,30 +274,30 @@
     "options": [
       { "answer": "Febre alta", "correct": false },
       { "answer": "Perda de visão", "correct": false },
-      { "answer": "Inchaço e coceira", "correct": true },
-      { "answer": "Dores nas articulações", "correct": false }
+      { "answer": "Inchaco e coceira", "correct": true },
+      { "answer": "Dores nas articulacões", "correct": false }
     ]
   },
   {
     "question": "Qual a principal forma de prevenir o cancer de pele?",
     "options": [
-      { "answer": "Evitar exposição prolongada ao sol", "correct": true },
+      { "answer": "Evitar exposicão prolongada ao sol", "correct": true },
       { "answer": "Tomar suplementos vitaminicos", "correct": false },
       { "answer": "Beber bastante agua", "correct": false },
       { "answer": "Evitar tomar sol pela manha", "correct": false }
     ]
   },
   {
-    "question": "Qual o beneficio de praticar exercícios fisicos regularmente?",
+    "question": "Qual o beneficio de praticar exercicios fisicos regularmente?",
     "options": [
       { "answer": "Aumenta a necessidade de suplementos", "correct": false },
       { "answer": "Provoca perda de massa muscular", "correct": false },
       { "answer": "Aumenta o risco de lesoes", "correct": false },
-      { "answer": "Reduz o risco de doenças cronicas", "correct": true }
+      { "answer": "Reduz o risco de doencas cronicas", "correct": true }
     ]
   },
   {
-    "question": "Qual a melhor forma de prevenir a propagação de virus respiratorios como a gripe?",
+    "question": "Qual a melhor forma de prevenir a propagacão de virus respiratorios como a gripe?",
     "options": [
       { "answer": "Evitar tomar banho diariamente", "correct": false },
       { "answer": "Usar mascara em ambientes fechados", "correct": true },
@@ -315,7 +315,7 @@
     ]
   },
   {
-    "question": "Como a pratica de atividades físicas pode beneficiar a saude mental?",
+    "question": "Como a pratica de atividades fisicas pode beneficiar a saude mental?",
     "options": [
       { "answer": "Provoca insonia", "correct": false },
       { "answer": "Aumenta o risco de depressao", "correct": false },
@@ -338,20 +338,20 @@
       { "answer": "Beber bastante agua", "correct": false },
       { "answer": "Comer vegetais todos os dias", "correct": false },
       { "answer": "Dormir 8 horas por noite", "correct": false },
-      { "answer": "Sedentarismo e ma alimentação", "correct": true }
+      { "answer": "Sedentarismo e ma alimentacão", "correct": true }
     ]
   },
   {
-    "question": "Qual a melhor maneira de evitar lesões durante a prática de exercicios fisicos?",
+    "question": "Qual a melhor maneira de evitar lesões durante a pratica de exercicios fisicos?",
     "options": [
       { "answer": "Fazer aquecimento e alongamento", "correct": true },
-      { "answer": "Começar com exercicios intensos", "correct": false },
+      { "answer": "Comecar com exercicios intensos", "correct": false },
       { "answer": "Não usar tenis adequado", "correct": false },
       { "answer": "Treinar todos os dias sem descanso", "correct": false }
     ]
   },
   {
-    "question": "Qual a principal medida para prevenir a transmissão de doenças sexualmente transmissiveis (DSTs)?",
+    "question": "Qual a principal medida para prevenir a transmissão de doencas sexualmente transmissiveis (DSTs)?",
     "options": [
       { "answer": "Fazer atividade fisica regularmente", "correct": false },
       { "answer": "Tomar banho apos o ato sexual", "correct": false },

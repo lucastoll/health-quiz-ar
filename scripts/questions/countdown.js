@@ -9,7 +9,7 @@ const arCounter = document.querySelector("#counterText");
 
 export function updateCountdownTimer() {
   if (!helpActive) {
-    //countdownTimer--;
+    countdownTimer--;
   }
   counter.textContent = `${countdownTimer}`;
   arCounter.setAttribute("value", `Tempo: ${countdownTimer}`);
